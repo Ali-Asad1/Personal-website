@@ -1,0 +1,15 @@
+:root {
+  /* page */
+  --page-dark :#424242 ;
+  /* main */
+  --primary-main : #F6B846;
+  --primary-main-light : #f3d396;
+  --primary-main-dark : #a16b05;
+  /* text */
+  --primary-text : #ffffff;
+  --secondary-text : #ccc;
+  --text-disabled : #00000061;
+  /* font */
+  --en-font : "Nunito";
+  --fa-font : "Vazir";
+}
