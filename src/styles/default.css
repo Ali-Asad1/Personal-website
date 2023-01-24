@@ -1,0 +1,7 @@
+@import url(./reset.css);
+@import url(./font.css);
+
+body {
+  box-sizing: border-box;
+  font-family: var(--en-font) , var(--fa-font);
+}
