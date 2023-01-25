@@ -2,7 +2,10 @@
 @import url(./variables.css);
 @import url(./font.css);
 
-body {
+* {
   box-sizing: border-box;
+}
+
+body {
   font-family: var(--en-font) , var(--fa-font);
 }
