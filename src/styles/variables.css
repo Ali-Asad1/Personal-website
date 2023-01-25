@@ -1,10 +1,11 @@
 :root {
   /* page */
-  --page-dark :#424242 ;
+  --page-dark :#303030 ;
   /* main */
   --primary-main : #F6B846;
   --primary-main-light : #f3d396;
   --primary-main-dark : #a16b05;
+  --secondary-main : #424242;
   /* text */
   --primary-text : #ffffff;
   --secondary-text : #ccc;
