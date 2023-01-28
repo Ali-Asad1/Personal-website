@@ -21,7 +21,7 @@ export default function Profile() {
           onInit={(typewriter) => {
             typewriter
               .typeString("Front-End Developer")
-              .pauseFor(1500)
+              .pauseFor(2500)
               .deleteAll()
               .typeString("Web Developer")
               .pauseFor(2000)

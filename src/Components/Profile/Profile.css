@@ -63,17 +63,13 @@
   margin: 15px 0 5px;
 }
 
-.profile .Typewriter {
-  height: 16px;
-}
-
 .profile .Typewriter .profile-subtitle {
   color: var(--primary-main);
   margin-top: 10px;
 }
 
 .profile .Typewriter .typewriter-cursor {
-  display: none;
+  visibility: hidden;
 }
 
 .profile-social {
