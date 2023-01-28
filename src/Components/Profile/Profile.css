@@ -1,6 +1,6 @@
 .profile {
   flex: 2;
-  height: calc(100vh - 60px);
+  height: 100%;
   background-color: var(--secondary-main);
   border-radius: 5px;
   overflow: hidden;
