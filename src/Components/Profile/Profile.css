@@ -1,6 +1,6 @@
 .profile {
   flex: 2;
-  height: calc(100vh - 60px);
+  height: 100%;
   background-color: var(--secondary-main);
   border-radius: 5px;
   overflow: hidden;
@@ -63,17 +63,13 @@
   margin: 15px 0 5px;
 }
 
-.profile .Typewriter {
-  height: 16px;
-}
-
 .profile .Typewriter .profile-subtitle {
   color: var(--primary-main);
   margin-top: 10px;
 }
 
 .profile .Typewriter .typewriter-cursor {
-  display: none;
+  visibility: hidden;
 }
 
 .profile-social {
