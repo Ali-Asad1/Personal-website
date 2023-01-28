@@ -1,5 +1,6 @@
 import React from "react";
-import "./App.css"
+import "./App.css";
+import NavBar from "./Components/NavBar/NavBar";
 import Profile from "./Components/Profile/Profile";
 
 export default function App() {
@@ -7,6 +8,7 @@ export default function App() {
     <div className='main'>
       <div className='main-container'>
         <Profile />
+        <NavBar />
       </div>
     </div>
   );
