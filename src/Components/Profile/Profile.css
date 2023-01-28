@@ -4,7 +4,7 @@
   background-color: var(--secondary-main);
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: rgba(246, 184, 70, 0.15) 20px -15px;
+  box-shadow: rgba(246, 184, 70, 0.15) 10px -10px;
 }
 
 .profile-image {
