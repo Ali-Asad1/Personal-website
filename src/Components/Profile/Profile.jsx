@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Profile.css";
 
 import { BsWhatsapp, BsTelegram, BsLinkedin, BsInstagram, BsGithub } from "react-icons/bs";
@@ -8,7 +8,7 @@ import Typewriter from "typewriter-effect";
 
 export default function Profile() {
   return (
-    <div className='profile'>
+    <div className='profile animate__animated animate__zoomIn animate__delay-2s'>
       <div className='profile-image'>
         <img src='./images/slide-image-1.jpg' alt='image' />
       </div>
@@ -53,11 +53,19 @@ export default function Profile() {
         <div className='profile-btns'>
           <button className='profile-btn profile-btn-dl'>
             download resume
-            <MdOutlineFileDownload style={{transition : 'transform .3s'}} size={22} className='profile-btn__icon' />
+            <MdOutlineFileDownload
+              style={{ transition: "transform .3s" }}
+              size={22}
+              className='profile-btn__icon'
+            />
           </button>
           <button className='profile-btn profile-btn-contact'>
             contact me
-            <IoMdPaperPlane style={{transition : 'transform .3s'}} size={18} className='profile-btn__icon' />
+            <IoMdPaperPlane
+              style={{ transition: "transform .3s" }}
+              size={18}
+              className='profile-btn__icon'
+            />
           </button>
         </div>
       </div>
