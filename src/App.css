@@ -1,10 +1,12 @@
+body {
+  background-color: var(--page-dark);
+}
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: var(--page-dark);
 }
 
 .main-container {
@@ -27,4 +29,47 @@
   border-radius: 5px;
   padding: 25px;
   overflow-y:auto ;
+}
+
+/* background */
+.parallelogram {
+  -webkit-transform: skew(-40deg);
+  -moz-transform: skew(-40deg);
+  -o-transform: skew(-40deg);
+  transform: skew(-40deg);
+  position: absolute;
+  z-index: -9;
+}
+
+#one {
+  width: 20px;
+  height: 300px;
+  animation: moveBar 15s linear infinite;
+  -webkit-box-shadow: 100px 509px var(--primary-main), 20px 300px var(--primary-main), -120px 150px var(--primary-main);
+  -moz-box-shadow: 100px 509px var(--primary-main), 20px 300px var(--primary-main), -120px 150px var(--primary-main);
+  box-shadow: 100px 509px var(--primary-main), 20px 300px var(--primary-main), -120px 150px var(--primary-main);
+}
+
+#two {
+  width: 10px;
+  height: 300px;
+  animation: moveBar 30s linear infinite;
+  -webkit-box-shadow: 250px 450px var(--primary-main-dark), -50px 200px var(--primary-main-dark);
+  -moz-box-shadow: 250px 450px var(--primary-main-dark), -50px 200px var(--primary-main-dark);
+  box-shadow: 250px 450px var(--primary-main-dark), -50px 200px var(--primary-main-dark);
+}
+
+#three {
+  width: 10px;
+  height: 500px;
+  animation: moveBar 20s linear infinite;
+  -webkit-box-shadow: 70px 500px var(--primary-main-light), -100px 200px var(--primary-main-light);
+  -moz-box-shadow: 70px 500px var(--primary-main-light), -100px 200px var(--primary-main-light);
+  box-shadow: 70px 500px var(--primary-main-light), -100px 200px var(--primary-main-light);
+}
+
+@keyframes moveBar {
+  100% {
+    transform: skew(-40deg) translateY(-1000px);
+  }
 }

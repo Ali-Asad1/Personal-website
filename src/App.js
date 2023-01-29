@@ -9,14 +9,22 @@ import { routes } from "./router/routes";
 export default function App() {
   const router = useRoutes(routes);
   return (
-    <div className='main'>
-      <div className='main-container'>
-        <div className='page-container animate__animated animate__zoomIn animate__delay-2s'>
-          {router}
+    <>
+      <div className='parallelogram' id='one'></div>
+      <div className='parallelogram' id='two'></div>
+      <div className='parallelogram' id='three'></div>
+      <div className='parallelogram' id='four'></div>
+      <div className='parallelogram' id='five'></div>
+      <div className='parallelogram' id='six'></div>
+      <div className='main'>
+        <div className='main-container'>
+          <div className='page-container animate__animated animate__zoomIn animate__delay-2s'>
+            {router}
+          </div>
+          <Profile />
+          <NavBar />
         </div>
-        <Profile />
-        <NavBar />
       </div>
-    </div>
+    </>
   );
 }
