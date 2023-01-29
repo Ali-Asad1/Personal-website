@@ -19,3 +19,12 @@
   padding: 25px;
   overflow: hidden;
 }
+
+.page-container {
+  flex: 2;
+  height: 100%;
+  background-color: var(--secondary-main);
+  border-radius: 5px;
+  padding: 25px;
+  overflow-y:auto ;
+}
