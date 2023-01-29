@@ -1,0 +1,30 @@
+.about-section {
+  color: var(--secondary-text);
+}
+
+.about-section h3 {
+  color: var(--primary-text);
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+.about-person {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 20px 40px;
+  justify-content: start;
+  margin-top: 30px;
+}
+
+.about-person h4 span {
+  font-weight: 500;
+  color: var(--primary-main);
+  margin-right: 10px;
+}
