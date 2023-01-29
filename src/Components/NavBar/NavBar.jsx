@@ -3,34 +3,55 @@ import { BsPerson, BsFileCode } from "react-icons/bs";
 import { RiPagesLine } from "react-icons/ri";
 import { AiOutlinePhone } from "react-icons/ai";
 import "./NavBar.css";
+import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
   return (
     <nav className='navbar animate__animated animate__fadeInRight animate__delay-2s '>
       <ul className='navbar-list'>
         <li className='navbar-list-item'>
-          <a className='navbar-list-link active' href='#'>
+          <NavLink
+            to='/'
+            className='navbar-list-link'
+            style={({ isActive }) =>
+              isActive ? { color: "var(--primary-main)" } : { color: "#fff" }
+            }>
             <BsPerson size={25} />
             about me
-          </a>
+          </NavLink>
         </li>
         <li className='navbar-list-item'>
-          <a className='navbar-list-link' href='#'>
+          <NavLink
+            to='/resume'
+            className='navbar-list-link'
+            style={({ isActive }) =>
+              isActive ? { color: "var(--primary-main)" } : { color: "#fff" }
+            }>
             <RiPagesLine size={25} />
             resume
-          </a>
+          </NavLink>
         </li>
         <li className='navbar-list-item'>
-          <a className='navbar-list-link' href='#'>
+          <NavLink
+            to='/projects'
+            className='navbar-list-link'
+            style={({ isActive }) =>
+              isActive ? { color: "var(--primary-main)" } : { color: "#fff" }
+            }>
             <BsFileCode size={25} />
             project
-          </a>
+          </NavLink>
         </li>
         <li className='navbar-list-item'>
-          <a className='navbar-list-link' href='#'>
+          <NavLink
+            to='/contact'
+            className='navbar-list-link'
+            style={({ isActive }) =>
+              isActive ? { color: "var(--primary-main)" } : { color: "#fff" }
+            }>
             <AiOutlinePhone size={25} />
             contact me
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>

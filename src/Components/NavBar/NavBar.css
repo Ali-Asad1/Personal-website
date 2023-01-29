@@ -34,7 +34,7 @@
   transition: color .3s;
 }
 
-.navbar-list-link:hover , .navbar-list-link.active{
+.navbar-list-link:hover{
   color: var(--primary-main);
 }
 
