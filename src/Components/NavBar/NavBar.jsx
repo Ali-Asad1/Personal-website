@@ -3,11 +3,10 @@ import { BsPerson, BsFileCode } from "react-icons/bs";
 import { RiPagesLine } from "react-icons/ri";
 import { AiOutlinePhone } from "react-icons/ai";
 import "./NavBar.css";
-import "animate.css";
 
 export default function NavBar() {
   return (
-    <nav className='navbar animate__animated animate__fadeInRight animate__delay-1s '>
+    <nav className='navbar animate__animated animate__fadeInRight animate__delay-2s '>
       <ul className='navbar-list'>
         <li className='navbar-list-item'>
           <a className='navbar-list-link active' href='#'>
