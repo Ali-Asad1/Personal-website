@@ -1,0 +1,37 @@
+.services-box {
+  padding: 20px 0;
+  color: var(--primary-text);
+  position: relative;
+}
+
+.services-box::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+  position: absolute;
+  bottom: 0;
+  left: -10px;
+}
+.services-box::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: radial-gradient(ellipse at top, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.service-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.service-description {
+  color: var(--secondary-text);
+  line-height: 1.5;
+  /* text-align: justify; */
+  padding-right: 30px;
+}
