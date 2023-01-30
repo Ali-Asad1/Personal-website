@@ -10,7 +10,7 @@ export default function SectionTitle({ title }) {
         <Typewriter
           onInit={(typewriter) => {
               typewriter
-              .pauseFor(2000)
+              .pauseFor(400)
               .typeString(title)
               .start();
           }}
