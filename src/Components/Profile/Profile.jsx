@@ -33,15 +33,15 @@ export default function Profile() {
             loop: true,
           }}
         />
-        <div className='profile-social'>
-          <a href='https://wa.me/989103931258'>
-            <BsWhatsapp className='profile-social__icon' target='_blank' />
+        <div className='profile-social' >
+          <a href='https://wa.me/989103931258' target='_blank'>
+            <BsWhatsapp className='profile-social__icon' />
           </a>
-          <a href='https://t.me/aliasad01'>
-            <BsTelegram className='profile-social__icon' target='_blank' />
+          <a href='https://t.me/aliasad01' target='_blank'>
+            <BsTelegram className='profile-social__icon' />
           </a>
-          <a href='https://www.linkedin.com/in/ali-asad-a77290232'>
-            <BsLinkedin className='profile-social__icon' target='_blank' />
+          <a href='https://www.linkedin.com/in/ali-asad-a77290232' target='_blank'>
+            <BsLinkedin className='profile-social__icon' />
           </a>
           <a href='https://instagram.com/aliasad_001?igshid=YzgyMTM2MGM=' target='_blank'>
             <BsInstagram className='profile-social__icon' />
