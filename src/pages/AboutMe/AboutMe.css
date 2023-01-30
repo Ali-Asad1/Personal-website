@@ -1,5 +1,8 @@
-.about-section {
+/* About section */
+
+.about-section , .services-section {
   color: var(--secondary-text);
+  padding: 20px 0;
 }
 
 .about-section h3 {
@@ -27,4 +30,13 @@
   font-weight: 500;
   color: var(--primary-main);
   margin-right: 10px;
+}
+
+
+/* Services section */
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
