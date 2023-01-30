@@ -6,7 +6,7 @@ import { services } from "../../data/servicesData";
 export default function AboutMe() {
   const [servicesData, setServicesData] = useState(services);
   return (
-    <div className='about-page animate__animated animate__fadeInDown'>
+    <div className='about-page animate__animated animate__fadeInUp'>
       <div className='about-section '>
         <SectionTitle title='About Me' />
         <h3>Hello i'm Ali</h3>
