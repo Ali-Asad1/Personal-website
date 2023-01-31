@@ -3,6 +3,7 @@
   align-items: center;
   gap: 15px;
   position: relative; 
+  padding: 10px 0;
 }
 
 .icon {
@@ -20,7 +21,7 @@
 
 
 .icon-label {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
@@ -30,6 +31,6 @@
   height: 1px;
   background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
   position: absolute;
-  bottom: -10px;
+  bottom: 0;
   left: 0;
 }
