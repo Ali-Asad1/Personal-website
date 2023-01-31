@@ -6,21 +6,25 @@ const services = [
     title: "Front-end programming",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor laboriosam assumenda natus at iste.",
     icon: <FaHtml5 />,
+    borderBottom : false 
   },
   {
     title: "Design website",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor laboriosam assumenda natus at iste.",
     icon: <MdOutlineDesignServices />,
+    borderBottom : false 
   },
   {
     title: "Responsive design",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor laboriosam assumenda natus at iste.",
     icon: <MdOutlinePageview />,
+    borderBottom : false 
   },
   {
     title: "React",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor laboriosam assumenda natus at iste.",
     icon: <FaReact />,
+    borderBottom : false 
   },
 ];
 

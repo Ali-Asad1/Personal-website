@@ -23,15 +23,9 @@
   right: 10px;
 }
 
-.service-title {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin: 15px 0;
-}
-
 .service-description {
   color: var(--secondary-text);
   line-height: 1.5;
-  /* text-align: justify; */
+  margin: 15px 0;
   padding-right: 30px;
 }

@@ -38,7 +38,7 @@ export default function AboutMe() {
         <SectionTitle title='My Services' />
         <div className='services'>
           {servicesData.map((item) => (
-            <ServiceItem title={item.title} desc={item.desc} icon={item.icon} />
+            <ServiceItem title={item.title} desc={item.desc} icon={item.icon} border={item.borderBottom}/>
           ))}
         </div>
       </div>
