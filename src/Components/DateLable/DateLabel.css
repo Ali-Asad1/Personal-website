@@ -1,0 +1,22 @@
+.date {
+  width: fit-content;
+  padding: 3px 5px;
+  margin: 10px 0;
+  border-radius: 2px;
+}
+
+.date.active {
+  border: 1px solid var(--primary-main);
+  color: var(--primary-main);
+}
+
+.date.inActive {
+  border: 1px solid #9c9c9c;
+  color: #9c9c9c;
+  
+}
+
+.date-label {
+  font-size: .8rem;
+  font-weight: 800;
+}
