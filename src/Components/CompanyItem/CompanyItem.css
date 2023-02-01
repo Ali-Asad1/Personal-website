@@ -1,0 +1,51 @@
+.company-item {
+  padding: 25px 45px 25px 0;
+  position: relative;
+}
+
+.company-item::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+.company-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 12px 0 15px;
+}
+
+.company-logo {
+  width: 38px;
+  height: 38px;
+}
+
+.company-header__left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.company-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.company-name {
+  font-size: .9rem;
+  white-space: nowrap;
+  color: var(--secondary-text);
+}
+
+.company-description {
+  color: var(--secondary-text);
+  line-height: 1.5;
+  font-size: .9rem;
+}
