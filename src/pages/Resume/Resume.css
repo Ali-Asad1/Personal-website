@@ -1,0 +1,22 @@
+.history-section {
+  padding: 20px 0;
+}
+
+.history-section .histories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.history-column {
+  position: relative;
+}
+
+.history-column:first-child:after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: radial-gradient(ellipse at top, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
