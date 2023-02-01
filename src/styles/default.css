@@ -8,6 +8,7 @@
 
 body {
   font-family: var(--en-font) , var(--fa-font);
+  color: var(--primary-text);
 }
 
 /* width */
