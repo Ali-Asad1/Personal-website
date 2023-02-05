@@ -4,14 +4,14 @@ import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import CompanyItem from "../../Components/CompanyItem/CompanyItem";
 import RadialBar from "../../Components/RadialBar/RadialBar";
 import ProgressBar from "../../Components/ProgressBar/ProgressBar";
+import SkillTools from "../../Components/SkillTools/SkillTools";
 import { skills } from "../../data/skills";
 import { MdSchool } from "react-icons/md";
-import { BsFillBriefcaseFill, BsTools } from "react-icons/bs";
+import { BsFillBriefcaseFill } from "react-icons/bs";
 import { BiCodeAlt } from "react-icons/bi";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { education as educationData } from "../../data/personalData";
 import "./Resume.css";
-import SkillTools from "../../Components/SkillTools/SkillTools";
 
 export default function Resume() {
   const [education, setEducation] = useState([...educationData]);
@@ -80,10 +80,10 @@ export default function Resume() {
             </div>
           </div>
           <div className='page-column'>
-            <CircleIcon lable='Tools' borderLine={true}>
-              <BsTools />
+            <CircleIcon lable='Back-End' borderLine={true}>
+              <FaNodeJs />
             </CircleIcon>
-            <div className='tools-box'>
+            <div className='progress-box'>
               {skills.tools.map((item) => (
                 <SkillTools label={item.label}>{item.icon}</SkillTools>
               ))}
