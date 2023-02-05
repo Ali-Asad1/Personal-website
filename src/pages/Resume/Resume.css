@@ -1,22 +1,47 @@
-.history-section {
+.history-section , .skills-section {
   padding: 20px 0;
 }
 
-.history-section .histories {
+.columns-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
+  gap: 20px 0;
 }
 
-.history-column {
+.page-column {
   position: relative;
+  padding: 0 20px;
 }
 
-.history-column:first-child:after {
+.page-column:nth-child(odd):after {
   content: "";
   width: 1px;
   height: 100%;
   background: radial-gradient(ellipse at top, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
   position: absolute;
   top: 0;
-  right: 20px;
+  right: 0;
+}
+
+
+.radial-box {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px 20px;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.progress-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px 0;
+  padding: 10px 0;
+}
+
+.tools-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px 0;
+  padding: 20px 0;
 }
