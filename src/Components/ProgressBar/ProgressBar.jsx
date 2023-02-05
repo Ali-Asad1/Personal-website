@@ -7,6 +7,7 @@ export default function ProgressBar({ label, percent, children }) {
       <div className='progress-label'>
         <span className='progress-title'>{label}</span>
         <span className='progress-icon'>{children}</span>
+        <span className="progress-percent">{percent}%</span>
       </div>
       <div className='progress-container'>
         <div className='progress-line' style={{ width: `${percent}%` }}></div>
