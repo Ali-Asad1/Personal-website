@@ -1,0 +1,6 @@
+.projects-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 30px;
+  padding: 0 20px 0 10px;
+}
