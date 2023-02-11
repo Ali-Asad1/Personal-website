@@ -50,8 +50,8 @@ export default function Resume() {
               <BiCodeAlt />
             </CircleIcon>
             <div className='radial-box'>
-              {skills.coding.map((item) => (
-                <RadialBar serie={item.percent} label={item.label} />
+              {skills.coding.map((item, index) => (
+                <RadialBar key={index} serie={item.percent} label={item.label} />
               ))}
             </div>
           </div>
@@ -60,8 +60,8 @@ export default function Resume() {
               <FaReact />
             </CircleIcon>
             <div className='progress-box'>
-              {skills.frontEnd.map((item) => (
-                <ProgressBar percent={item.percent} label={item.label}>
+              {skills.frontEnd.map((item, index) => (
+                <ProgressBar key={index} percent={item.percent} label={item.label}>
                   {item.icon}
                 </ProgressBar>
               ))}
@@ -72,8 +72,8 @@ export default function Resume() {
               <FaNodeJs />
             </CircleIcon>
             <div className='progress-box'>
-              {skills.backEnd.map((item) => (
-                <ProgressBar percent={item.percent} label={item.label}>
+              {skills.backEnd.map((item, index) => (
+                <ProgressBar key={index} percent={item.percent} label={item.label}>
                   {item.icon}
                 </ProgressBar>
               ))}
@@ -84,8 +84,10 @@ export default function Resume() {
               <BsTools />
             </CircleIcon>
             <div className='tools-box'>
-              {skills.tools.map((item) => (
-                <SkillTools label={item.label}>{item.icon}</SkillTools>
+              {skills.tools.map((item, index) => (
+                <SkillTools key={index} label={item.label}>
+                  {item.icon}
+                </SkillTools>
               ))}
             </div>
           </div>
