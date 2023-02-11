@@ -1,0 +1,128 @@
+.contact-section, .email-section {
+  padding: 20px 0;
+  margin-bottom: 50px;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 20px 40px;
+  justify-content: start;
+  margin-top: 30px;
+}
+
+.contact-container h4 span {
+  font-weight: 500;
+  color: var(--primary-main);
+  margin-right: 10px;
+}
+
+
+.contact-container a {
+  border-bottom: 1px solid var(--primary-main);
+}
+
+.message-form-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 50px;
+  grid-template-areas: 
+    ". ."
+    "area area"
+  ;
+}
+
+.message-text-input {
+  grid-area: area;
+}
+
+
+.message-form__fullname-input,
+.message-form__email-input,
+.message-form__text-input {
+  width: 100%;
+  padding: 10px 0 ;
+  color: #fff;
+  caret-color: var(--primary-main);
+  font-size: 1rem;
+  font-family: var(--en-font);
+  background-color: inherit;
+  border: none;
+  border-bottom: 2px solid #7a7a7a;
+  outline: none;
+  transition: .5s;
+  resize: none;
+}
+
+.message-form__fullname-input:focus,
+.message-form__email-input:focus,
+.message-form__text-input:focus{
+  border-color: var(--primary-main);
+  color: var(--primary-main);
+}
+
+.message-form__fullname-input:focus::placeholder,
+.message-form__email-input:focus::placeholder,
+.message-form__text-input:focus::placeholder {
+  color: #ccc;
+}
+
+
+.message-form__submit-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 20px 7px 0;
+  margin-top: 20px;
+  background-color: inherit;
+  color: #FFF;
+  border: none;
+  outline: none;
+  transition: .5s;
+  position: relative;
+}
+
+.message-form__btn-text {
+  font-size: 1rem;
+  font-family: var(--en-font);
+}
+
+.message-form__btn-icon {
+  font-size: .8rem;
+  transition: transform .5s;
+}
+
+.message-form__submit-btn:hover {
+  color: var(--primary-main);
+}
+
+.message-form__submit-btn:hover > .message-form__btn-icon {
+  transform: translate(5px ,0) rotate(360deg);
+}
+
+.message-form__submit-btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 70%;
+  bottom: 0;
+  background: var(--primary-main);
+  height: 2px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.message-form__submit-btn:hover:before, .message-form__submit-btn:focus:before, .message-form__submit-btn:active:before {
+  right: 0;
+}
+
+.message-form__submit-btn.disable {
+  color: #7a7a7a;
+  pointer-events: none;
+}
