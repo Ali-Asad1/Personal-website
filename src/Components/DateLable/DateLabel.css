@@ -19,4 +19,5 @@
 .date-label {
   font-size: .8rem;
   font-weight: 800;
+  white-space: nowrap;
 }

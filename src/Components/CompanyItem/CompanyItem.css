@@ -1,5 +1,10 @@
+.company-information {
+  display: flex;
+  flex-direction: column;
+}
+
 .company-item {
-  padding: 25px 45px 25px 0;
+  padding: 15px 10px 15px 0;
   position: relative;
 }
 
@@ -40,7 +45,6 @@
 
 .company-name {
   font-size: .9rem;
-  white-space: nowrap;
   color: var(--secondary-text);
 }
 
@@ -48,4 +52,14 @@
   color: var(--secondary-text);
   line-height: 1.5;
   font-size: .9rem;
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 568px) {
+  .company-information {
+    align-items: center;
+    text-align: center;
+  }
 }

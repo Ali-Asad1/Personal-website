@@ -34,7 +34,7 @@
   ;
 }
 
-.message-text-input {
+.message-form__text {
   grid-area: area;
 }
 
@@ -125,4 +125,22 @@
 .message-form__submit-btn.disable {
   color: #7a7a7a;
   pointer-events: none;
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 568px) {
+  .contact-container {
+    grid-template-columns: 100%;
+  }
+  .message-form-wrap {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      '.'
+      '.'
+      'area'
+    ;
+  }
 }

@@ -7,6 +7,7 @@
 }
 
 .icon {
+  flex-basis: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,4 +34,17 @@
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+
+/* responsive */
+
+@media screen and (max-width : 1024px) {
+  .icon-container {
+    flex-direction: column;
+  }
+  
+  .icon-label {
+    font-size: .9rem;
+  }
 }

@@ -23,7 +23,7 @@ body {
 }
 
 .page-container {
-  flex: 2;
+  flex: 1;
   height: 100%;
   background-color: var(--secondary-main);
   border-radius: 5px;
@@ -72,4 +72,26 @@ body {
   100% {
     transform: skew(-40deg) translateY(-1000px);
   }
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+ .main {
+  height: 100%;
+ } 
+
+ .main-container {
+  max-height: 1440px;
+  flex-direction: column-reverse;
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+ }
+
+ .page-container {
+  flex: auto;
+  width: 100%;
+  height: calc(100vh - 50px);
+ }
 }

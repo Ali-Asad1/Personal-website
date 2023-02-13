@@ -59,7 +59,7 @@ export default function ContactMe() {
               <Input
                 element='textarea'
                 type='text'
-                placeholder='Email'
+                placeholder='text'
                 className='message-form__text-input'
                 disable={true}
               />

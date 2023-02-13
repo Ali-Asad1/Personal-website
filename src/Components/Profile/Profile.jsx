@@ -33,26 +33,26 @@ export default function Profile() {
             loop: true,
           }}
         />
-        <div className='profile-social' >
-          <a href='https://wa.me/989103931258' target='_blank'>
+        <div className='profile-social'>
+          <a href='https://wa.me/989103931258'>
             <BsWhatsapp className='profile-social__icon' />
           </a>
-          <a href='https://t.me/aliasad01' target='_blank'>
+          <a href='https://t.me/aliasad01'>
             <BsTelegram className='profile-social__icon' />
           </a>
-          <a href='https://www.linkedin.com/in/ali-asad-a77290232' target='_blank'>
+          <a href='https://www.linkedin.com/in/ali-asad-a77290232'>
             <BsLinkedin className='profile-social__icon' />
           </a>
-          <a href='https://instagram.com/aliasad_001?igshid=YzgyMTM2MGM=' target='_blank'>
+          <a href='https://instagram.com/aliasad_001?igshid=YzgyMTM2MGM='>
             <BsInstagram className='profile-social__icon' />
           </a>
-          <a href='https://github.com/MrAli001' target='_blank'>
+          <a href='https://github.com/MrAli001'>
             <BsGithub className='profile-social__icon' />
           </a>
         </div>
         <div className='profile-btns'>
           <button className='profile-btn profile-btn-dl'>
-            download resume
+            resume
             <MdOutlineFileDownload
               style={{ transition: "transform .3s" }}
               size={22}

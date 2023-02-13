@@ -2,7 +2,7 @@
 
 .about-section , .services-section {
   color: var(--secondary-text);
-  padding: 20px 0;
+  margin-bottom: 20px;
 }
 
 .about-section h3 {
@@ -39,4 +39,19 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+
+
+/* responsive */
+
+@media screen and (max-width : 1280px) {
+  .about-page {
+    font-size: .8rem !important;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .about-person {
+    grid-template-columns: 1fr;
+  }
 }

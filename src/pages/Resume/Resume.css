@@ -34,7 +34,7 @@
 
 .progress-box {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 100%;
   gap: 30px 0;
   padding: 10px 0;
 }
@@ -44,4 +44,25 @@
   grid-template-columns: 1fr;
   gap: 15px 0;
   padding: 20px 0;
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 968px) and (min-width: 768px) {
+  .radial-box {
+    grid-template-columns: 55% 55%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .columns-container {
+    grid-template-columns: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .radial-box {
+    column-gap: 15px;
+  }
 }
