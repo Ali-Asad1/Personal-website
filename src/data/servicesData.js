@@ -3,19 +3,19 @@ import {FaReact , FaHtml5} from 'react-icons/fa'
 
 const services = [
   {
-    title: "Front-end programming",
+    title: "Front-end",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor laboriosam assumenda natus at iste.",
     icon: <FaHtml5 />,
     borderBottom : false 
   },
   {
-    title: "Design website",
+    title: "Design",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor laboriosam assumenda natus at iste.",
     icon: <MdOutlineDesignServices />,
     borderBottom : false 
   },
   {
-    title: "Responsive design",
+    title: "Responsive ",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor laboriosam assumenda natus at iste.",
     icon: <MdOutlinePageview />,
     borderBottom : false 
