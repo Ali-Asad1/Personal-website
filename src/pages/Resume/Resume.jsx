@@ -16,7 +16,7 @@ import "./Resume.css";
 export default function Resume() {
   const [education, setEducation] = useState([...educationData]);
   return (
-    <div className='resume-page animate__animated animate__fadeInUp'>
+    <div className='resume-page'>
       <div className='history-section'>
         <SectionTitle title='My Resume' />
         <div className='columns-container'>

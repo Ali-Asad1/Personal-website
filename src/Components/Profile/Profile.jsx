@@ -8,7 +8,7 @@ import Typewriter from "typewriter-effect";
 
 export default function Profile() {
   return (
-    <div className='profile animate__animated animate__zoomIn animate__delay-2s'>
+    <div className='profile'>
       <div className='profile-image'>
         <img src='./images/slide-image-1.jpg' alt='image' />
       </div>

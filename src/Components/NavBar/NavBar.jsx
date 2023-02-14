@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
   return (
-    <nav className='navbar animate__animated animate__fadeInRight animate__delay-2s '>
+    <nav className='navbar'>
       <ul className='navbar-list'>
         <li className='navbar-list-item'>
           <NavLink

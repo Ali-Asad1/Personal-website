@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className='main'>
       <div className='main-container'>
-        <div className='page-container animate__animated animate__zoomIn animate__delay-2s'>
+        <div className='page-container'>
           {router}
         </div>
         <Profile />
