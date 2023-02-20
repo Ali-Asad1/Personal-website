@@ -1,11 +1,15 @@
+import { motion } from "framer-motion";
 import React from "react";
 import DateLabel from "../DateLable/DateLabel";
-
 import "./CompanyItem.css";
 
 export default function CompanyItem({ title, name, city, desc, image, dates }) {
   return (
-    <div className='company-item'>
+    <motion.div
+      className='company-item'
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}>
       <div className='company-information'>
         <DateLabel {...dates} />
         <div className='company-header'>
@@ -21,6 +25,6 @@ export default function CompanyItem({ title, name, city, desc, image, dates }) {
           <p>{desc}</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

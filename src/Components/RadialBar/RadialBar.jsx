@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 import Chart from "react-apexcharts";
 import "./RadialBar.css";
@@ -59,14 +60,20 @@ export default function RadialBar({ serie, label }) {
       },
     },
   });
-  const [series, setSeries] = useState([serie]);
-
+  const [series, setSeries] = useState([0]);
   return (
-    <div className='chart-container'>
+    <motion.div
+      className='chart-container'
+      initial={{ opacity: 0, scale: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      onViewportEnter={() => {
+        setTimeout(() => {
+          setSeries([serie]);
+        }, 500);
+      }}>
       <Chart options={options} series={series} type='radialBar' height={150} />
-      <span className="chart-label">
-        {label}
-      </span>
-    </div>
+      <span className='chart-label'>{label}</span>
+    </motion.div>
   );
 }

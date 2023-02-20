@@ -5,10 +5,29 @@ import { BsWhatsapp, BsTelegram, BsLinkedin, BsInstagram, BsGithub } from "react
 import { MdOutlineFileDownload } from "react-icons/md";
 import { IoMdPaperPlane } from "react-icons/io";
 import Typewriter from "typewriter-effect";
+import { motion } from "framer-motion";
 
 export default function Profile() {
+  const profileMotion = {
+    visible: {
+      opacity: 1,
+      scale: 1,
+
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        delay: 2,
+        opacity: { delay: 2.1 },
+      },
+    },
+
+    hidden: {
+      opacity: 0,
+      scale: 0.5,
+    },
+  };
   return (
-    <div className='profile'>
+    <motion.div className='profile' variants={profileMotion} initial='hidden' animate='visible'>
       <div className='profile-image'>
         <img src='./images/slide-image-1.jpg' alt='image' />
       </div>
@@ -69,6 +88,6 @@ export default function Profile() {
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -11,12 +11,29 @@ import { BsFillBriefcaseFill, BsTools } from "react-icons/bs";
 import { BiCodeAlt } from "react-icons/bi";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { education as educationData } from "../../data/personalData";
+import { motion } from "framer-motion";
 import "./Resume.css";
 
 export default function Resume() {
   const [education, setEducation] = useState([...educationData]);
   return (
-    <div className='resume-page'>
+    <motion.div
+      className='resume-page'
+      initial={{
+        y: "20%",
+        opacity: 0,
+      }}
+      animate={{
+        y: 0,
+        opacity: 1,
+      }}
+      exit={{
+        y: "20%",
+        opacity: 0,
+      }}
+      transition={{
+        duration: 1,
+      }}>
       <div className='history-section'>
         <SectionTitle title='My Resume' />
         <div className='columns-container'>
@@ -93,6 +110,6 @@ export default function Resume() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -3,11 +3,28 @@ import Button from "../../Components/Form/Button/Button";
 import Input from "../../Components/Form/Input/Input";
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import { BsArrowRight } from "react-icons/bs";
+import { motion } from "framer-motion";
 import "./ContactMe.css";
 
 export default function ContactMe() {
   return (
-    <div className='contact-page'>
+    <motion.div
+      className='contact-page'
+      initial={{
+        y: "20%",
+        opacity: 0,
+      }}
+      animate={{
+        y: 0,
+        opacity: 1,
+      }}
+      exit={{
+        y: "20%",
+        opacity: 0,
+      }}
+      transition={{
+        duration: 1,
+      }}>
       <div className='contact-section'>
         <SectionTitle title='Contact Me' />
         <div className='contact-container'>
@@ -77,6 +94,6 @@ export default function ContactMe() {
           </div>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 }

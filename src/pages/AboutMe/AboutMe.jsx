@@ -3,10 +3,29 @@ import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import ServiceItem from "../../Components/ServiceItem/ServiceItem";
 import "./AboutMe.css";
 import { services } from "../../data/servicesData";
+import { motion } from "framer-motion";
+
 export default function AboutMe() {
   const [servicesData, setServicesData] = useState(services);
+  
   return (
-    <div className='about-page'>
+    <motion.div
+      className='about-page'
+      initial={{
+        y: "20%",
+        opacity: 0,
+      }}
+      animate={{
+        y: 0,
+        opacity: 1,
+      }}
+      exit={{
+        y: "20%",
+        opacity: 0,
+      }}
+      transition={{
+        duration: 1,
+      }}>
       <div className='about-section '>
         <SectionTitle title='About Me' />
         <h3>Hello i'm Ali</h3>
@@ -38,10 +57,16 @@ export default function AboutMe() {
         <SectionTitle title='My Services' />
         <div className='services'>
           {servicesData.map((item, index) => (
-            <ServiceItem key={index} title={item.title} desc={item.desc} icon={item.icon} border={item.borderBottom}/>
+            <ServiceItem
+              key={index}
+              title={item.title}
+              desc={item.desc}
+              icon={item.icon}
+              border={item.borderBottom}
+            />
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

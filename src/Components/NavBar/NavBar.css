@@ -14,7 +14,6 @@
 
 .navbar-list-item {
   width: 100%;
-  position: relative;
 
 }
 
@@ -26,21 +25,26 @@
   gap: 12px;
   width: 100%;
   padding: 18px 0;
-  color: var(--primary-text);
   font-size: 14px;
   font-weight: 700;
   text-transform:capitalize;
   white-space: nowrap;
-  transition: color .3s;
+  transition: color .5s;
+  position: relative;
+  transition: transform 0.5s , color 0.5s;
 }
 
 .navbar-list-link:hover{
   color: var(--primary-main);
+  transform: scale(1.1);
 }
 
+.navbar-list-link:active {
+  transform: scale(0.9);
+}
 
 /* border */
-.navbar-list-item::after {
+.navbar-list-link::after {
   content: '';
   position: absolute;
   left: 0;

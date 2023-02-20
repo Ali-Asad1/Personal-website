@@ -1,10 +1,14 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { BsLink45Deg } from "react-icons/bs";
 import "./ProjectBox.css";
-
 export default function ProjectBox({ title, subTitle, image }) {
   return (
-    <div className='project-box'>
+    <motion.div
+      className='project-box'
+      initial={{ opacity: 0, scale: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}>
       <a href='#'>
         <div className='project-image'>
           <div className='project-image__overlay'>
@@ -17,9 +21,9 @@ export default function ProjectBox({ title, subTitle, image }) {
           <span className='project-description__sub-title'>{subTitle}</span>
         </div>
       </a>
-    </div>
+    </motion.div>
   );
 }
 ProjectBox.defaultProps = {
-  image : 'no_images_available.jpg'
-}
+  image: "no_images_available.jpg",
+};
