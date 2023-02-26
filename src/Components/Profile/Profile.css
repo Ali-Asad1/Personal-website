@@ -151,6 +151,7 @@
 @media screen and (max-width: 768px) {
   .profile {
     flex: auto;
+    order: 3;
     width: 100%;
     height: calc(100vh - 50px);
   }
